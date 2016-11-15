@@ -1,23 +1,23 @@
-# insira no bd informações sobre três estudantes, como:
-# nome, data denascimento, disciplinas cursadas e o curso
+ /*insira no bd informações sobre três estudantes, como:
+ nome, data denascimento, disciplinas cursadas e o curso
 
-# o comando use escolhe quando existe ou cria quando inexiste o banco de 
-# dados
+ o comando use escolhe quando existe ou cria quando inexiste o banco de 
+ dados */
 use aula2
 
-#lista todos os bancos
+// lista todos os bancos
 show dbs
 
-# cria uma coleção, mas não lhe atribui documentos
-# db: objeto base
-# alunos: nome da coleção dentro do banco aula2
-# insert(): função para adicionar um documento à coleção
+// cria uma coleção, mas não lhe atribui documentos
+// db: objeto base
+// alunos: nome da coleção dentro do banco aula2
+// insert(): função para adicionar um documento à coleção
 db.alunos.insert({})
 
-#lista todos as coleções
+//lista todos as coleções
 show collections
 
-#inserindo documentos:
+// nserindo documentos:
 db.alunos.insert({
     "nome" : "Gilmar",
     "sexo" : "M",
@@ -78,28 +78,28 @@ db.alunos.insert({
     },
 });
 
-# Exibe apenas os alunos do sexo masculino nascidos em MG (a função 
-# pretty() identa a saída)
+// Exibe apenas os alunos do sexo masculino nascidos em MG (a função 
+// pretty() identa a saída)
 db.alunos.find({"sexo" : "M", "uf" : "MG"}).pretty()
 
-# Procura e exibe o aluno com menor data de nascimento
-# A função sort pode ser utilizada para ordenar os resultados retornados 
-# pela query. Pode ser ordenando de forma crescente (1) e descrescente 
-# (-1). A função find() recebe dois parâmentros: o primeiro limita a query 
-# a 10 resultados e o segundo determina que apenas o 1º não será ignorado
+/* Procura e exibe o aluno com menor data de nascimento
+ A função sort pode ser utilizada para ordenar os resultados retornados 
+ pela query. Pode ser ordenando de forma crescente (1) e descrescente 
+ (-1). A função find() recebe dois parâmentros: o primeiro limita a query 
+ a 10 resultados e o segundo determina que apenas o 1º não será ignorado */
 db.alunos.find({},10,1).sort({"data" : 1}).pretty()
 
-# Atualizando a nota da disciplina Banco de dados não relacionais
+// Atualizando a nota da disciplina Banco de dados não relacionais
 db.alunos.update({"nome" : "Robert"}, {$set : {"notas.NSQ" : 5}})
-# Exibindo resultado
+// Exibindo resultado
 db.alunos.findOne({"nome" : "Robert"})
 
-# Remove um dos estudantes
+// Remove um dos estudantes
 db.alunos.remove({"nome" : "Gilmar"})
-# Exibe o resultado
+// Exibe o resultado
 db.alunos.find({}).pretty()
 
-# Remove todo os documentos de uma coleção
+// Remove todo os documentos de uma coleção
 db.alunos.remove({})
 
 

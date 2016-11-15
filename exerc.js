@@ -37,7 +37,7 @@ db.alunos.insert({
     "nome" : "Pedro",
     "sexo" : "M",
     "data" : new Date(1992, 2, 13),
-    "uf"   : "MG",
+    "uf"   : "ES",
     "instituicao" : "PUC-MINAS",
     "curso": "Ciencias de Dados e Big Data",
     "notas" : {
@@ -51,7 +51,7 @@ db.alunos.insert({
 db.alunos.insert({
     "nome" : "Amanda",
     "sexo" : "F",
-    "data" : "não se pergunta isso a uma garota...",
+    "data" : new Date(1994, 6, 15),
     "uf"   : "MG",
     "instituicao" : "PUC-MINAS",
     "curso": "Ciencias de Dados e Big Data",
@@ -78,21 +78,29 @@ db.alunos.insert({
     },
 });
 
-# Exibe apenas os alunos do sexo másculino nascidos em MG (a função 
+# Exibe apenas os alunos do sexo masculino nascidos em MG (a função 
 # pretty() identa a saída)
 db.alunos.find({"sexo" : "M", "uf" : "MG"}).pretty()
 
+# Procura e exibe o aluno com menor data de nascimento
 # A função sort pode ser utilizada para ordenar os resultados retornados 
 # pela query. Pode ser ordenando de forma crescente (1) e descrescente 
 # (-1). A função find() recebe dois parâmentros: o primeiro limita a query 
 # a 10 resultados e o segundo determina que apenas o 1º não será ignorado
-db.alunos.find({},10,1).sort({"data" : -1}).pretty()
+db.alunos.find({},10,1).sort({"data" : 1}).pretty()
 
 # Atualizando a nota da disciplina Banco de dados não relacionais
-db.alunos.update({"nome" : "Robert"}, {$set : {"notas.NSQ" : 10}})
+db.alunos.update({"nome" : "Robert"}, {$set : {"notas.NSQ" : 5}})
 # Exibindo resultado
 db.alunos.findOne({"nome" : "Robert"})
 
+# Remove um dos estudantes
+db.alunos.remove({"nome" : "Gilmar"})
+# Exibe o resultado
+db.alunos.find({}).pretty()
+
+# Remove todo os documentos de uma coleção
+db.alunos.remove({})
 
 
 

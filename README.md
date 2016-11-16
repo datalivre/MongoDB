@@ -1,7 +1,7 @@
 # <img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" alt="MongoDB" width="170"> 
 Introdução ao banco de dados NoSQL MongoDB
 
-`MongoDB` é um banco de dados NoSQL que oferece alta performance, velocidade, além de escalabilidade automática. 
+`MongoDB` é um banco de dados NoSQL que oferece alta performance e velocidade, além de escalabilidade automática. 
 Ele é certamente o banco de dados NoSQL mais utilizando no mundo. Diferentemente dos bancos de dados relacionais, ele não possui
 conceitos de tabelas, colunas e linhas, esquemas, joins ou chaves estrangeiras. 
 
@@ -9,13 +9,14 @@ MongoDB é um banco de dados baseado em documentos que armazena os dados em um f
 Além do mais é gratuito para Linux, Mac e Windows.
 
 **Tópicos relacionados:**
-Como criar/escolher um banco de dados,
-Como listar os bancos de dados,
-Como criar uma coleção,
-Como listar uma coleção,
-Como inserir documentos numa coleção,
-Como remover um documento de uma coleção,
-Entre outros.
+
+- Como criar/escolher um banco de dados,
+- Como listar os bancos de dados,
+- Como criar uma coleção,
+- Como listar uma coleção,
+- Como inserir documentos numa coleção,
+- Como remover um documento de uma coleção,
+- Entre outros.
 
 <a href="https://github.com/robbierobert/MongoDB/blob/master/exerc_1.md">Clique aqui
 para começar.<a/>

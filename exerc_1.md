@@ -1,6 +1,7 @@
 #Introdução ao MongoDB
 Vamos inserir em um banco de dados informações sobre quatro estudantes do curso de Ciências de Dados e Big Data da PUC-MINAS, como: seu nome, sua data denascimento, as disciplinas cursadas e o curso.
 
+##Criando o banco de dados
 O comando `use` escolhe (quando o banco existe) ou cria (quando inexiste) um banco de dados.
 Digite o seguinte comando no shell para criarmos o nosso DB:
 
@@ -13,17 +14,17 @@ Após a criação do banco de dados seria uma boa ideia verificar se ele realmen
 ```javascript
 show dbs
 ```
-Agora vamos criar uma coleção, mas ainda não iremos atribuir documentos a ela:
+##Criando uma coleção
+A sintaxe básica para se adiconar uma coleção é vazia ao banco de dados previamente criado se dá por `db.collection.insert()`, onde `db` é nosso objeto base, `collection` é o nome da coleção e o `insert()` é a função que adiciona um documento a coleção.   
+Esclarecido algumas dúvidas, vamos criar uma coleção, mas ainda não iremos atribuir documentos a ela.
 ```javascript
-// db: objeto base
-// alunos: nome da coleção dentro do banco aula2
-// insert(): função para adicionar um documento à coleção
 db.alunos.insert({})
 ```
 Use o comando `show collections` para listar a coleção previamente criada 
 ```javascript
 show collections
 ```
+##Inserindo documentos na coleção
 Agora sim, vamos inserir documentos nesta coleção! Estes documentos representaram as caracteristicas de cada um dos quatro alunos, como:
 * Nome,
 * Sexo,
@@ -92,6 +93,7 @@ db.alunos.insert({
     },
 });
 ```
+##Fazendo buscas no documento
 Após inserirmos os documentos à nossa coleção, vamos brincar um pouco com as funcionalidades do MongoDB. Do nosso banco de dados, vamos tentar exibir apenas os alunos (sexo masculino) que residem em Minas Gerais, para isso, digite no shell o seguinte código: 
 
 ```javascript
@@ -105,6 +107,7 @@ Em seguida, vamos usar `sort()` para procurar e localizar o aluno com menor data
 ```javascript
 db.alunos.find({},10,1).sort({"data" : 1}).pretty()
 ```
+##Alterando valores de um documento
 Vamos tentar uma coisa mais interessante agora, que tal atualizarmos a nota da disciplina Banco de Dados não Relacionais (NSQ)?
 
 ```javascript
@@ -112,6 +115,7 @@ db.alunos.update({"nome" : "Robert"}, {$set : {"notas.NSQ" : 5}})
 // Exibindo resultado
 db.alunos.findOne({"nome" : "Robert"})
 ```
+##Removendo documento da coleção
 E se por acaso algum aluno desistisse do curso, como iriamos deletar o documento que o representa do DB? Para isso, vamos usar a função `remove` e, como você já deve imaginar, remover um dos alunos da coleção.
 
 ```javascript
@@ -120,6 +124,7 @@ db.alunos.remove({"nome" : "Robert"})
 // Exibe o resultado
 db.alunos.find({}).pretty()
 ```
+##Removendo uma todos os documentos de uma coleção
 Por fim, vamos remover todos os documentos restantes da coleção alunos. Note que, é sempre necessário cautela para executar este tipo de remoção, dada a natureza definitiva da função `remove()`.  
 
 ```javascript

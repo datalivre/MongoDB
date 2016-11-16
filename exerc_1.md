@@ -98,8 +98,8 @@ Após inserirmos os documentos à nossa coleção, vamos brincar um pouco com as
 // pretty() identa a saída)
 db.alunos.find({"sexo" : "M", "uf" : "MG"}).pretty()
 ```
-Em seguida, vamos usar `sort` para procurar e localizar o aluno com menor data de nascimento. 
-> A função sort() pode ser utilizada para ordenar os resultados retornados pela query. O resultado pode ser ordenado de forma crescente (1) ou decrescente (-1). 
+Em seguida, vamos usar `sort()` para procurar e localizar o aluno com menor data de nascimento. 
+> A função `sort()` pode ser utilizada para ordenar os resultados retornados pela query. O resultado pode ser ordenado de forma crescente (1) ou decrescente (-1). 
 > Já a função find() recebe dois parâmetros: o primeiro limitará a nossa query a 10 resultados e o segundo determinará que apenas o 1º não será ignorado.
 
 ```javascript
@@ -120,7 +120,7 @@ db.alunos.remove({"nome" : "Robert"})
 // Exibe o resultado
 db.alunos.find({}).pretty()
 ```
-Por fim, vamos remover todos os documentos restantes da coleção alunos. Note que, é sempre necessário cautela para executar este tipo de remoção, dada a natureza definitiva da função remove().  
+Por fim, vamos remover todos os documentos restantes da coleção alunos. Note que, é sempre necessário cautela para executar este tipo de remoção, dada a natureza definitiva da função `remove()`.  
 
 ```javascript
 db.alunos.remove({})

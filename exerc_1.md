@@ -124,7 +124,7 @@ db.alunos.remove({"nome" : "Robert"})
 // Exibe o resultado
 db.alunos.find({}).pretty()
 ```
-##Removendo uma todos os documentos de uma coleção
+##Removendo todos os documentos de uma coleção
 Por fim, vamos remover todos os documentos restantes da coleção alunos. Note que, é sempre necessário cautela para executar este tipo de remoção, dada a natureza definitiva da função `remove()`.  
 
 ```javascript

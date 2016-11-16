@@ -17,7 +17,7 @@ Como inserir documentos numa coleção,
 Como remover um documento de uma coleção,
 Entre outros.
 
-<a href="https://github.com/robbierobert/MongoDB/blob/master/exerc_1.md">Clique aqui
+<a href="MongoDB/exerc_1.md ">Clique aqui
 para começar.<a/>
 
 ##Links úteis:

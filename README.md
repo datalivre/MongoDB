@@ -1,4 +1,4 @@
-# MongoDB
+# <img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" alt="MongoDB" width="170"> 
 Introdução ao banco de dados NoSQL MongoDB
 
 `MongoDB` é um banco de dados NoSQL que oferece alta performance, velocidade, além de escalabilidade automática. 
@@ -17,10 +17,12 @@ Como inserir documentos numa coleção,
 Como remover um documento de uma coleção,
 Entre outros.
 
+<a href="https://github.com/robbierobert/MongoDB/blob/master/exerc_1.md">Clique aqui
+para começar.<a/>
 
 ##Links úteis:
 * https://docs.mongodb.com/
-* https://www.mongodb.com/download-center?jmp=docs#community
+* https://github.com/mongodb
 
 ## Licença
 
@@ -30,5 +32,4 @@ alt="Licença Creative Commons" style="border-width:0"
 src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br
 />Esta obra foi licenciada sob uma Licença <a rel="license"
 href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">Creative
-Commons Atribuição-Compartilha 3.0 Não Adaptada</a>.
-
+Commons Atribuição-Compartilha 3.0 - Não Adaptada</a>.

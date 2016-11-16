@@ -18,6 +18,7 @@ Além do mais é gratuito para Linux, Mac e Windows.
 - Como remover um documento de uma coleção,
 - Entre outros.
 
+<img src="https://api.travis-ci.org/jekyll/jekyll.svg"><img/><br/>
 <a href="https://github.com/robbierobert/MongoDB/blob/master/exerc_1.md">Clique aqui
 para começar.<a/>
 

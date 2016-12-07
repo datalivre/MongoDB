@@ -5,22 +5,30 @@ Introdução ao banco de dados NoSQL MongoDB
 Ele é certamente o banco de dados NoSQL mais utilizando no mundo. Diferentemente dos bancos de dados relacionais, ele não possui
 conceitos de tabelas, colunas e linhas, esquemas, joins ou chaves estrangeiras. 
 
-MongoDB é um banco de dados baseado em documentos que armazena os dados em um formato chamado BSON que lembra muito o JSON. 
+O MongoDB é baseado em documentos e armazena os dados em um formato chamado BSON que lembra muito o JSON. 
 Além do mais é gratuito para Linux, Mac e Windows.
 
 **Tópicos relacionados:**
 
-- Como criar/escolher um banco de dados,
-- Como listar os bancos de dados,
-- Como criar uma coleção,
-- Como listar uma coleção,
-- Como inserir documentos numa coleção,
-- Como remover um documento de uma coleção,
-- Entre outros.
+- Como criar/escolher um banco de dados [Introduço ao MOngoDB],
+- Como listar os bancos de dados [Introduço ao MOngoDB],
+- Como criar uma coleção [Introduço ao MOngoDB],
+- Como listar uma coleção [Introduço ao MOngoDB],
+- Como inserir documentos numa coleção [Introduço ao MOngoDB],
+- Como remover um documento de uma coleção [Introduço ao MOngoDB],
+- Utilização do modelo de programação MapReduce [MapReduce X Aggregate],
+- Utilização do framework Aggregate [MapReduce X Aggregate],
+- Criando e removendo Índices [Criando e Excluindo Índices].
 
 <img src="https://api.travis-ci.org/jekyll/jekyll.svg"><img/><br/>
-<a href="https://github.com/robbierobert/MongoDB/blob/master/exerc_1.md">Clique aqui
-para começar.<a/>
+
+Clique em um dos seguintes links para começar:
+
+1 - [Introdução ao MongoDB](aula1.md)
+
+2 - [MapReduce X Aggregate](aula3.md)
+
+3 - [Criando e Excluindo Índices](aula4.md)
 
 ##Links úteis:
 * https://docs.mongodb.com/

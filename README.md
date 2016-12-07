@@ -10,12 +10,12 @@ Além do mais é gratuito para Linux, Mac e Windows.
 
 **Tópicos relacionados:**
 
-- Como criar/escolher um banco de dados [Introduço ao MOngoDB],
-- Como listar os bancos de dados [Introduço ao MOngoDB],
-- Como criar uma coleção [Introduço ao MOngoDB],
-- Como listar uma coleção [Introduço ao MOngoDB],
-- Como inserir documentos numa coleção [Introduço ao MOngoDB],
-- Como remover um documento de uma coleção [Introduço ao MOngoDB],
+- Como criar/escolher um banco de dados [Introduço ao MongoDB],
+- Como listar os bancos de dados [Introduço ao MongoDB],
+- Como criar uma coleção [Introduço ao MongoDB],
+- Como listar uma coleção [Introduço ao MongoDB],
+- Como inserir documentos numa coleção [Introduço ao MongoDB],
+- Como remover um documento de uma coleção [Introduço ao MongoDB],
 - Utilização do modelo de programação MapReduce [MapReduce X Aggregate],
 - Utilização do framework Aggregate [MapReduce X Aggregate],
 - Criando e removendo Índices [Criando e Excluindo Índices].

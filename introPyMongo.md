@@ -192,10 +192,10 @@ A operação a seguir, atualiza o primeiro documento com o nome igual a "ken", u
 
 ```py
 
-result = db.Streetfighter.update_one(
+db.Streetfighter.update_one(
 
     {"name": "ken"}, 
-        { "$set": { "name": " Kenneth Masters" }
+        { "$set": { "name": "kenneth masters" }
     }
 )
 ```
@@ -203,7 +203,7 @@ result = db.Streetfighter.update_one(
 Para atualizar um campo em um documento incorporado, use a notação ponto. Ao usar a notação de ponto, coloque o nome do campo pontilhado inteiro entre aspas. O seguinte atualiza o campo de rua no documento de endereço incorporado.
 
 ```py
-result = db.Streetfighter.update_one(
+db.Streetfighter.update_one(
     {"name": "zangief"}, 
     {"$set": 
         {"body.blood": "a"}
@@ -211,3 +211,4 @@ result = db.Streetfighter.update_one(
 )
 
 ```
+> Referência: https://docs.mongodb.com/ecosystem/drivers/python/

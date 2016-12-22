@@ -22,7 +22,7 @@ client = MongoClient()
 > Se nenhum argumento for adicionado na criação de uma nova conexão, o **MongoClient** irá utilizar os argumentos _default_ e rodar diretamente da interface localhost/porta 27017
 
 ### Inserindo dados com PyMongo
-Vamos nos conectar ao **mongod** utilizando o **MongoClient** e, em seguida, criaremos o banco de dados Streetfighter. Para tal façanha, será necessário utilizar o método **insert\_one\(\)** para adicionar documentos na nossa _MongoDB Collection_.
+Vamos nos conectar ao **mongod** utilizando o **MongoClient** e, em seguida, criaremos o banco de dados Streetfighter. Para tal façanha, será necessário utilizar o método **insert\_many\(\)** para adicionar documentos na nossa _MongoDB Collection_.
 > A operação seguinte criará um banco de dados chamado `Capcom` caso este ainda não exista:
 
 ```py

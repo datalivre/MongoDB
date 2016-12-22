@@ -30,7 +30,7 @@ Clique em um dos seguintes links para começar:
 
 1 - [Introdução ao MongoDB](aula2.md)
 
-2 - [Introduço ao PyMongo](introPyMongo.md)  
+2 - [Introdução ao PyMongo](introPyMongo.md)  
 
 3 - [MapReduce X Aggregate](aula3.md)
 

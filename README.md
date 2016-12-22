@@ -10,12 +10,16 @@ Além do mais é gratuito para Linux, Mac e Windows.
 
 **Tópicos relacionados:**
 
-- Como criar/escolher um banco de dados [Introduço ao MongoDB],
-- Como listar os bancos de dados [Introduço ao MongoDB],
-- Como criar uma coleção [Introduço ao MongoDB],
-- Como listar uma coleção [Introduço ao MongoDB],
-- Como inserir documentos numa coleção [Introduço ao MongoDB],
-- Como remover um documento de uma coleção [Introduço ao MongoDB],
+- Como criar/escolher um banco de dados [Introdução ao MongoDB],
+- Como listar os bancos de dados [Introdução ao MongoDB],
+- Como criar uma coleção [Introdução ao MongoDB],
+- Como listar uma coleção [Introdução ao MongoDB],
+- Como inserir documentos numa coleção [Introdução ao MongoDB],
+- Como remover um documento de uma coleção [Introdução ao MongoDB],
+- Como instalar o driver PyMongo [Introdução ao PyMongo],
+- Como importar o driver PyMongo [Introdução ao PyMongo],
+- Como criar uma conexão com PyMongo [Introdução ao PyMongo],
+- Como inserir dados no MongoDB utilizando Python [Introdução ao PyMongo],
 - Utilização do modelo de programação MapReduce [MapReduce X Aggregate],
 - Utilização do framework Aggregate [MapReduce X Aggregate],
 - Criando e removendo Índices [Criando e Excluindo Índices].
@@ -26,9 +30,11 @@ Clique em um dos seguintes links para começar:
 
 1 - [Introdução ao MongoDB](aula2.md)
 
-2 - [MapReduce X Aggregate](aula3.md)
+2 - [Introduço ao PyMongo](introPyMongo.md)  
 
-3 - [Criando e Excluindo Índices](aula4.md)
+3 - [MapReduce X Aggregate](aula3.md)
+
+4 - [Criando e Excluindo Índices](aula4.md)
 
 ##Links úteis:
 * https://docs.mongodb.com/

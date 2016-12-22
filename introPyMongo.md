@@ -12,7 +12,7 @@ Para utilizar o PyMongo num ambiente de desenvolvimento Python é necessário im
 Utilizando um shell ou alguma IDE, inicie o ambiente Python, logo digite as senguintes linhas a fim de importar o PyMongo:
 ```python
 from pymongo import MongoClient
-#biblioteca para manipulação de objetos do tipo data
+# aproveite para adicionar a biblioteca para manipulação de objetos do tipo data
 from datetime import datetime
 ```
 ### Criando uma conexão:
@@ -22,7 +22,7 @@ client = MongoClient()
 > Se nenhum argumento for adicionado na criação de uma nova conexão, o **MongoClient** irá utilizar os argumentos _default_ e rodar diretamente da interface localhost/porta 27017
 
 ### Inserindo dados com PyMongo
-Vamos nos conectar ao **mongod** utilizando o **MongoClient** e, em seguida, criaremos o banco de dados Streetfighter. Para tal façanha, será necessário utilizar os métodos **insert\_one\(\)** ou **insert\_many\(\)** para adicionar documentos em uma _MongoDB Collection_.
+Vamos nos conectar ao **mongod** utilizando o **MongoClient** e, em seguida, criaremos o banco de dados Streetfighter. Para tal façanha, será necessário utilizar o método **insert\_one\(\)** para adicionar documentos na nossa _MongoDB Collection_.
 > A operação seguinte criará um banco de dados chamado `Capcom` caso este ainda não exista:
 
 ```py
@@ -32,7 +32,7 @@ db = client.Capcom
 >Esta operação criará uma coleção chamada `Streetfighter` caso esta ainda não exista:
 
 ```py
-db.Streetfighter.insert_many({
+db.Streetfighter.insert_many([{
   "magic": 5,
   "name": "ryu",
   "nationality": "japao",
@@ -43,16 +43,16 @@ db.Streetfighter.insert_many({
   },
   "intelligence": 5,
   "agility": 4,
-  "date": ISODate("1964-07-21T00:00:00Z"),
+  "date": datetime.strptime("1964-07-21","%Y-%m-%d"),
   "style": "ansatsuken",
   "force": 4
-}
+},
 {
   "nationality": "estados unidos",
   "intelligence": 6,
   "force": 4,
   "agility": 5,
-  "date": ISODate("1965-02-14T00:00:00Z"),
+  "date": datetime.strptime("1965-02-14","%Y-%m-%d"),
   "magic": 4,
   "style": "ansatsuken",
   "name": "ken",
@@ -61,7 +61,7 @@ db.Streetfighter.insert_many({
     "blood": "o",
     "height": 1.75
   }
-}
+},
 {
   "body": {
     "weight": 180,
@@ -73,11 +73,10 @@ db.Streetfighter.insert_many({
   "agility": 2,
   "style": "sambo",
   "nationality": "uniao sovietica",
-  "date": ISODate("1956-06-01T00:00:00Z"),
+  "date": datetime.strptime("1956-06-01","%Y-%m-%d"),
   "magic": 1,
   "force": 8
-}
-
+}])
 ```
 Como o documento passado para o metodo insert\_many não contẽm um campo \_id, o MongoClient adicionará o campo no documento e definirá o seu valor automaticamente.
 

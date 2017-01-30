@@ -24,8 +24,6 @@ Além do mais é gratuito para Linux, Mac e Windows.
 - Utilização do framework Aggregate [MapReduce X Aggregate],
 - Criando e removendo Índices [Criando e Excluindo Índices].
 
-<img src="https://api.travis-ci.org/jekyll/jekyll.svg"><img/><br/>
-
 Clique em um dos seguintes links para começar:
 
 1 - [Introdução ao MongoDB](aula2.md)

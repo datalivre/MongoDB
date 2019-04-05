@@ -1,6 +1,8 @@
 # <img src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" alt="MongoDB" width="170"> 
-Introdução ao banco de dados NoSQL MongoDB
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/datalivre)
 
+Introdução ao banco de dados NoSQL MongoDB
+----
 `MongoDB` é um banco de dados NoSQL que oferece alta performance e velocidade, além de escalabilidade automática. 
 Ele é certamente o banco de dados NoSQL mais utilizando no mundo. Diferentemente dos bancos de dados relacionais, ele não possui
 conceitos de tabelas, colunas e linhas, esquemas, joins ou chaves estrangeiras. 

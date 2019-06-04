@@ -1,4 +1,4 @@
-##Criando e Excluindo Índices
+## Criando e Excluindo Índices
 **Procurando pela palavra `feliz` e exibindo estatísticas da pesquisa**
 ```js
 db.Vocabulary.find({text: "feliz"}).explain({"executionStats":1})

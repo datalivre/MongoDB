@@ -66,7 +66,7 @@ db.alunos.insert({
 db.alunos.insert({
     "nome" : "Amanda",
     "sexo" : "F",
-    "data" : new Date(1994, 6, 15),
+    "data" : "Nunca pergunte isso para uma garota!",
     "uf"   : "MG",
     "instituicao" : "PUC-MINAS",
     "curso": "Ciencias de Dados e Big Data",
